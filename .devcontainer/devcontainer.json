@@ -7,6 +7,11 @@
   "containerEnv": { "DEVCONTAINER": "1" },
   "appPort": ["8123:8123"],
   "runArgs": ["-e", "GIT_EDITOR=code --wait"],
+  "mounts": [
+    // Custom configuration directory
+    "source=/Users/lou_juicy/Documents/Linus/dev/linus-custom_component,target=${containerWorkspaceFolder}/config,type=bind",
+    "source=/Users/lou_juicy/Documents/Linus/dev/linus-dashboard,target=${containerWorkspaceFolder}/config/custom_components/linus/frontend/linus-dashboard,type=bind"
+  ],
   "extensions": [
     "ms-python.vscode-pylance",
     "visualstudioexptteam.vscodeintellicode",
