@@ -10,9 +10,12 @@
   "mounts": [
     // Linus main component
     "source=/Users/lou_juicy/Documents/Linus/dev/linus-custom_component,target=${containerWorkspaceFolder}/config,type=bind",
+    // HA frontend repo
+    // "source=/Users/lou_juicy/Documents/Linus/dev/frontend,target=${containerWorkspaceFolder}/ha-frontend,type=bind",
     // Linus dashboard
-    "source=/Users/lou_juicy/Documents/Linus/dev/linus-dashboard,target=${containerWorkspaceFolder}/config/custom_components/linus/frontend/linus-dashboard,type=bind",
-    "source=/Users/lou_juicy/Documents/Linus/dev/frontend/src,target=${containerWorkspaceFolder}/config/custom_components/linus/frontend/linus-dashboard/ha-frontend,type=bind",
+    "source=/Users/lou_juicy/Documents/Linus/dev/linus-dashboard,target=${containerWorkspaceFolder}/linus-dashboard,type=bind",
+    "source=/Users/lou_juicy/Documents/Linus/dev/linus-dashboard/dist,target=${containerWorkspaceFolder}/config/custom_components/linus/frontend/dist,type=bind",
+    // "source=/Users/lou_juicy/Documents/Linus/dev/frontend/src,target=${containerWorkspaceFolder}/config/custom_components/linus/frontend/linus-dashboard/ha-frontend,type=bind",
     // Switch manager main project and link to custom_components
     "source=/Users/lou_juicy/Documents/Linus/dev/Home-Assistant-Switch-Manager,target=${containerWorkspaceFolder}/Home-Assistant-Switch-Manager,type=bind",
     "source=/Users/lou_juicy/Documents/Linus/dev/frontend/src,target=${containerWorkspaceFolder}/Home-Assistant-Switch-Manager/ha-frontend,type=bind",
